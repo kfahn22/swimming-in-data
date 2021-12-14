@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Data Diving - Home</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../css/datadiving.css">
+</head>
+
+<body>
+	<header>
+		<h1>Data Diving</h1>
+		<nav id="myNavBar">
+			<div class="overlay" id="myNav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<div class="overlay-content">
+					<a href="../html/about.html" id="aboutMe">About</a>
+					<a href="../html/generative_art.html" id="genArt">Generative Art</a>
+				</div>
+			</div>
+
+			<div class="topNav">
+				<a href="../html/index.html" class="active" id="a0">Home</a>
+				<a href="../html/about.html">About</a>
+				<a href="../html/generative_art.html">Generative Art</a>
+			</div>
+
+			<!-- Use any element to open/show the overlay navigation menu-->
+			<button id="ham"><span onclick="openNav()"><i class="fa fa-bars"></i></span></button>
+		</nav>
+	</header>
+
+	<div class="flex-container" id="flex">
+		<!--<input class="form-control" id="myInput" type="text" placeholder="Search.."> -->
+
+		<div class="d-flex flex-column" id="myDIV">
+			<div id="article">
+				<h2>Real World Constraints on Data Collection</h2>
+				<p>My father is a physicist. He is obviously very bright, and this is possibly why he always insisted on
+					giving a post-movie analysis
+					regarding the believability of movie plots. I am envisioning his reaction to a movie entitled
+					"Vaccine," in which a sinister government
+					collects and stores information about their citizens <em> by administering a vaccine during a
+						pandemic.</em>
+					He would spend the hour after we had seen the movie describing in great detail just how ludicrous
+					the plot was: (1) this technology does not
+					exist, (2) even if it did--where is all this data going to be stored, and (3) having a ton of data
+					on hundreds of millions of people isn't very useful unless you have the
+					man-power to analyze it. I, on the other hand, am willing to suspend my disbelief to enjoy a good
+					movie. But I am quite frankly baffled at the number of people who apparently
+					accept as truth the notion that the COVID vaccine (or any other vaccine for that matter) is capable
+					of transmitting biometric
+					data to wifi towers. I did a little bit of Googling to try to figure out where this idea came from,
+					and this is what I learned.
+					One of the challenges of vaccinating people in poorer countries is that most do not have the ability
+					to keep a good record of the
+					vaccines that have been administered. Researchers at MIT are trying to address this critical issue
+					by working on a special invisible dye that
+					could be delivered along with a vaccine. This dye would contain nanocrystals that emit near-infrared
+					light that would create something
+					akin to a very tiny QR code tatoo that could be detected by a specially equipped smartphone. So
+					let's review. There <em>are</em> researchers who are
+					trying to create a way to use a vaccine's ingredients to store data, but the information they want
+					to store is <em>about the delivery of the vaccine itself</em>,
+					which is critical information when it is part of a multi-dose regimen. It is important to note that
+					the research is still in the experimental stage at this point
+					and has not has not been tested on humans.
+					(On a side note, this research was partially funded by the Bill and Melinda Gates Foundation, which
+					has a history
+					of funding research on vaccines to prevent illnesse--such as malari--in poorer countries.) You can
+					read more about
+					the MIT research <a class="link"
+						href="https://news.mit.edu/2019/storing-vaccine-history-skin-1218">here</a>.</p>
+			</div>
+			<div class="challenge" style="flex-grow:1" id="challenge">
+				<h2>Two Truths and a Lie</h2>
+				<blockquote style="margin-left: 25%; margin-right: 25%; text-align: center; color:#0a1a32;">"There are
+					lies, damn lies, and statistics" </blockquote>
+
+
+				<p>This phrase, which is often attributed to Mark Twain, was a favorite of my Uncle Richard.
+					As someone with extensive training in statistics and econometrics--I have also learned that while
+					data analysis is
+					extremely useful--it is important to be aware of potential biases and weaknesses in the analysis.
+					Let me give you one very simple example. NOAA has a dataset on the economic and human impacts of
+					weather events.
+					I have written three statements below. Can you spot the lie?</p>
+
+				<div id="statements">
+					<p>Statement 1: Tornados kill more people than any other weather event.</p>
+					<p>Statement 2: Tsunamies are a big danger in the US Midwest.</p>
+					<p>Statement 3: Extreme heat kill more people than any other weather event.</p>
+				</div>
+				<br>
+
+				<div>
+					<p><span id="text"> Which would did you get was incorrect. I bet you choose statement 2, but that is
+							not correct.
+							Statement 1 is the one that is incorrect. While the database started in 1950, until 1996
+							tornados, thunderstorms, wind and hail were the only events
+							in the database. If you were to run a query on the data to find out the most deadly type of
+							weather
+							event, you would conclude that tornadoes are the most deadly. However, if you filter the
+							data to include only those years that
+							include the entire group of weather events, you would find that extreme heat causes the most
+							deaths. Extreme head is the number one
+							killer, which we was in evidence this past year. Although the midwest doesn't seem like it
+							would have tsunamis, the Great Lakes
+							have a common type of tsunami called a "meteotsunamis", which is kind of like bath water
+							sloshing around it a bathtub.</span></p>
+					<div class="btn-container">
+						<button id="toggle">Answer</button>
+					</div>
+
+					<br>
+					<p>You can find a more detailed <a class="link" href="https://rpubs.com/kfahn/760850">here</a></p>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="about">
+			<h2 style="color:white; margin-left: 5%">About Me</h2>
+			<br>
+			<div class="card">
+				<img class="card-img-top" src="../assets/cartoonKathy.jpg" alt="cartoon">
+				<div class="card-body">
+					<!--<h4 class="card-title">Kathy</h4> -->
+					<p>Hi, I'm Kathy and this website is about how we as a society are collecting and processing
+						increasingly greater
+						amounts of data--or information--about every aspect of our lives.</p>
+					<br>
+					<a href="../html/about.html" class="btn btn-primary">See Profile</a>
+				</div>
+			</div>
+			<div class="about-site" id="info">
+				<p>"Perfect information" (a state of the world in which people can easily and accurately
+					obtain information) is essential for a well functioning market economy.</p>
+				<p>In some ways, the development of the web has given us an unprecedented ability to access information.
+					The proliferation of websites dedicated to online learning for youth, such as <a class="link"
+						href="https://www.khanacademy.org/">Khan Academy</a>, and the multitude of sites
+					where you are able to learn from world-class professors--moocs such as Edx and Coursera,
+					free online courses provided by University of Michigan's <a class="link" href="-chuck.com">Dr.
+						Chuck</a>, and youtube channels, such as John
+					Hopkin's <a class="link" href="https://www.youtube.com/c/rogerpeng">Roger Peng</a> teaching R, NYU's
+					Daniel Siffman teaching Processing at his channel
+					<a class="link" href="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw">The Coding
+						Train</a>, as well as Chris Ching teaching Swift at <a class="link"
+						href="https://www.youtube.com/user/codewithchris">CodeWithChris</a>
+					--are just a few examples that I have personally used.</p>
+				<p>Search engines such as Google allow us to find and compare products and services easily. I am no
+					longer surprised when I imagine
+					a new product idea, and can invariably I can find the product already for sale on the web.</p>
+				<p> All of this amazing technology comes with a cost. The price is the marketing data that is being
+					collected <em>about us</em>. I am going to explore how this information
+					is currently being collected and used--for good or ill--and how you can make informed decisions
+					based on the available data.</p>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- javascript -->
+	<!-- This function toggles a read more button -->
+	<script>
+		$(document).ready(function () {
+			$("#myInput").on("keyup", function () {
+				var value = $(this).val().toLowerCase();
+				$("#myDIV *").filter(function () {
+					$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+				});
+			});
+		});
+	</script>
+
+	<!-- This function is for a Read more read less button -->
+	<!-- Code found on codepen legendaryPower "Simple Read Less Read More Button"-->
+	<script>
+		$(document).ready(function () {
+			$("#toggle").click(function () {
+				var elem = $("#toggle").text();
+				if (elem == "Answer") {
+					//Stuff to do when btn is in the read more state
+					$("#toggle").text("Close");
+					$("#text").slideDown();
+				} else {
+					//Stuff to do when btn is in the read less state
+					$("#toggle").text("Answer");
+					$("#text").slideUp();
+				}
+			});
+		});
+	</script>
+
+	<!--This function open and closes a curtain overlay -->
+
+	<script>
+		/* Open when someone clicks on the span element */
+		function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+		}
+
+		/* Close when someone clicks on the "x" symbol inside the overlay */
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+	</script>
+</body>
+
+</html>
