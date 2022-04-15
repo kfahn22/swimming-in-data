@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Diving With Data - Generative Art</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+   <style>
+   /* Make the image fully responsive */
+   .carousel-inner img {
+     width: 100%;
+     height: 100%;
+   }
+	  #home {
+	    position: absolute;
+	    right: 10px;
+	    top: 10px;
+	    display:block;
+	    background-color: #ffffff;
+	    }
+   </style>
+	<link rel="stylesheet" href="../css/datadiving.css">
+</head>
+<body>
+<header style="height: 8vh;">
+			<h1 style="170%">Generative Art</h1>
+			<nav>
+					<div>
+									<a id="home" href="../html/index.html" ><i class="fas fa-home"></i></a>
+					</div>
+      </nav>
+</header>
+
+			    <div class="genArtText">
+						<p>I recently learned about generative art using the Processing language.  Processing is an
+						open source software  program that can be downloaded from <a href="https://processing.org">here</a>, where there are some great
+					  tutorials.  If you are interested in learning more about the Processing language, I also recommend
+						 "Creating Procedural Artworks with Processing:
+						A Holistic Guide" by Penny de Byl.  The images that are displayed here are based on code taken from Penny de Byl's book.</p>
+			    </div>
+					   <div id="demo" class="carousel slide" data-ride="carousel">
+							 <!-- Indicators -->
+					  <ul class="carousel-indicators">
+					    <li data-target="#demo" data-slide-to="0" class="active"></li>
+					    <li data-target="#demo" data-slide-to="1"></li>
+					    <li data-target="#demo" data-slide-to="2"></li>
+					  </ul>
+
+					  <!-- The slideshow -->
+					  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							        <img src="../assets/julia_001.png" alt="Julia set 1"  style="width:100vw;">
+							    </div>
+							    <div class="carousel-item">
+							       <img src="../assets/paisley.png" alt="Paisley"  width="1100" height="500">
+							    </div>
+							    <div class="carousel-item">
+							       <img src="../assets/blue_juliaset.png" alt="Julia set 2" width="1100" height="500">
+							    </div>
+					  </div>
+
+					  <!-- Left and right controls -->
+					  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+					    <span class="carousel-control-prev-icon"></span>
+					  </a>
+					  <a class="carousel-control-next" href="#demo" data-slide="next">
+					    <span class="carousel-control-next-icon"></span>
+					  </a>
+					</div>
+
+</body>
+</html>
